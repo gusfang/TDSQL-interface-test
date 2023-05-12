@@ -20,12 +20,17 @@ MySQL官网下载ODBC驱动包，官网链接：https://dev.mysql.com/downloads/
 
 ### 第二部分手动编写测试代码
 需要进行手动编写并进行测试的驱动列表：
-1. test-c-interface.c
-2. test-cpp-interface.cpp
-3. test-java-interface.java
-4. test-nodejs-interface.js
-5. test-php-interface.php
-6. test-python-interface.py
+##### test-c-interface.c
+
+##### test-cpp-interface.cpp
+
+##### test-java-interface.java
+
+##### test-nodejs-interface.js
+
+##### test-php-interface.php
+
+##### test-python-interface.py
 
 ### 第三部分特殊类驱动测试
 
