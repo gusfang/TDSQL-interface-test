@@ -15,17 +15,28 @@ MySQL官网下载ODBC驱动包，官网链接：https://dev.mysql.com/downloads/
 5. 参数设置结束后，点击Test，出现”Connection Successful!“表示配置成功
 ### 第二部分手动编写测试代码
 需要进行手动编写并进行测试的驱动列表：
-##### test-c-interface.c
+##### test-c-interface
 
-##### test-cpp-interface.cpp
+##### test-cpp-interface
 
-##### test-java-interface.java
+##### test-java-interface
 
-##### test-nodejs-interface.js
+##### test-nodejs-interface
 
-##### test-php-interface.php
+##### test-php-interface
+PHP在赤兔平台进行安装的时候已经安装好了，我们使用PHP内置web的服务器进行测试。不在原有的赤兔环境进行测试，防止将赤兔的PHP环境破坏。
+1. 将test-php-interface.php上传到测试服务器，或者新建一个PHP文件，将test-php-interface.php中的测试代码复制到新建的PHP文件中。
+2. 启动内置web服务器，指定的端口不要和TDSQL所使用的端口冲突。
+```shell
+php -S localhost:8515
+```
+3. 命令行运行php文件
 
-##### test-python-interface.py
+```shell
+curl -is http://localhost:8515
+```
+
+##### test-python-interface
 
 ### 第三部分特殊类驱动测试
 
