@@ -66,7 +66,33 @@ replica_type_conversions
 ```
 
 ##### TDSQL Python接口测试
-
+1. Python接口测试需要Python3.x以上版本。运行测试脚本，根据提示输入相应的数据库连接信息。
+2. 测试结果
+```shell
+[root@clm-test01 ~]# python3.6 test_connect.py 
+Please enter  Proxy address: 
+Please enter database port: 
+Please enter database name: 
+Please enter database user: 
+Please enter database password: 
+连接成功！
+--------------------Test PyMySQL Connection--------------------
+接口当前测试时间是: 2023-05-15 17:41:12 
+当前PyMySQL的驱动版本是: 1.0.2
+当前连接测试的数据库信息如下: 
+           VARIABLE_NAME	VARIABLE_VALUES
+       admin_tls_version	 TLSv1.2
+          innodb_version	 8.0.32
+        protocol_version	 10
+replica_type_conversions	 
+  slave_type_conversions	 
+             tls_version	 TLSv1.2
+                 version	 8.0.32
+         version_comment	 MySQL Community Server - GPL
+ version_compile_machine	 x86_64
+      version_compile_os	 Linux
+    version_compile_zlib	 1.2.13
+```
 ### 第三部分特殊类驱动测试
 
 
