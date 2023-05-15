@@ -22,6 +22,23 @@ MySQL官网下载ODBC驱动包，官网链接：https://dev.mysql.com/downloads/
 ##### TDSQL Java接口测试
 
 ##### TDSQL NodeJS接口测试
+1. nodejs官网下载安装包
+```shell
+wget https://nodejs.org/download/release/v12.22.12/node-v12.22.12-linux-x64.tar.gz
+```
+4. 创建nodejs安装目录，把安装包上传到创建的目录
+```shell
+mkdir -p /usr/local/nodejs
+
+# 解压安装包
+tar -zxvf node-v12.22.12-linux-x64.tar.gz
+
+# 验证安装
+[root@clm-test01 bin]# pwd
+/usr/local/nodejs/node-v12.22.12-linux-x64/bin
+[root@clm-test01 bin]# ./node -v
+v12.22.12
+```
 
 ##### TDSQL PHP接口测试
 PHP在赤兔平台进行安装的时候已经安装好了，我们使用PHP内置web的服务器进行测试。不在原有的赤兔环境进行测试，防止将赤兔的PHP环境破坏。如果PHP命令无法运行，请检查PHP的环境变量。或者到PHP的安装目录下的bin目录中手动执行php命令。
