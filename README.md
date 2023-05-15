@@ -69,7 +69,7 @@ replica_type_conversions
 1. Python接口测试需要Python3.x以上版本。运行测试脚本，根据提示输入相应的数据库连接信息。
 2. 测试结果
 ```shell
-[root@clm-test01 ~]# python3.6 test_connect.py 
+[root@clm-test01 ~]# python3.6 test_python_interface.py 
 Please enter  Proxy address: 
 Please enter database port: 
 Please enter database name: 
