@@ -67,7 +67,7 @@ replica_type_conversions
     version_compile_zlib	1.2.13
 ```
 
-##### test-python-interface
+##### TDSQL Python接口测试
 
 ### 第三部分特殊类驱动测试
 
