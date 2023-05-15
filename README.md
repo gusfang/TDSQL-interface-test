@@ -5,7 +5,7 @@
 ### 第一部分MySQL官网驱动包测试 
 MySQL官网可以直接进行测试的测试驱动是ODBC，具体测试方法如下：
 
-#### ODBC
+#### TDSQL ODBC接口测试
 MySQL官网下载ODBC驱动包，官网链接：https://dev.mysql.com/downloads/connector/odbc/
 安装完ODBC驱动后，参数配置如下：
 1. 选择控制面板->系统和安全->管理工具->ODBC数据源（64位）
