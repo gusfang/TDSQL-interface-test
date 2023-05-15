@@ -35,6 +35,33 @@ php -S localhost:8515
 ```shell
 curl -is http://localhost:8515
 ```
+4. 测试结果
+
+```shell
+[root@clm-test01 bin]# curl -is http://localhost:8515
+HTTP/1.1 200 OK
+Host: localhost:8515
+Date: Mon, 15 May 2023 07:24:52 GMT
+Connection: close
+X-Powered-By: PHP/8.2.6
+Content-type: text/html; charset=UTF-8
+
+--------------------PHP Connection Test--------------------
+接口当前测试时间是: 2023-05-15 07:24:52
+当前连接测试的数据库信息如下: 
+           VARIABLE_NAME	VARIABLE_VALUE
+       admin_tls_version	TLSv1.2
+          innodb_version	8.0.32
+        protocol_version	10
+replica_type_conversions	
+  slave_type_conversions	
+             tls_version	TLSv1.2
+                 version	8.0.32
+         version_comment	MySQL Community Server - GPL
+ version_compile_machine	x86_64
+      version_compile_os	Linux
+    version_compile_zlib	1.2.13
+```
 
 ##### test-python-interface
 
