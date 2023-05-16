@@ -20,7 +20,7 @@ MySQL官网下载ODBC驱动包，官网链接：https://dev.mysql.com/downloads/
 ##### TDSQL C++接口测试
 
 ##### TDSQL Java接口测试
-
+Java对TDSQL的接口测试，需要将源码编译成jar包，这样就可以把驱动和代码打包在一起，直接上传到用户的测试环境就可以进行测试。
 ##### TDSQL PHP接口测试
 PHP在赤兔平台进行安装的时候已经安装好了，我们使用PHP内置web的服务器进行测试。不在原有的赤兔环境进行测试，防止将赤兔的PHP环境破坏。如果PHP命令无法运行，请检查PHP的环境变量。或者到PHP的安装目录下的bin目录中手动执行php命令。
 1. 将test-php-interface.php上传到测试服务器，或者新建一个index.php文件，将test-php-interface.php中的测试代码复制到新建的PHP文件中。如果是上传的源文件，在访问连接中需要添加完整的文件名。
