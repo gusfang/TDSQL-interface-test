@@ -20,7 +20,37 @@ MySQL官网下载ODBC驱动包，官网链接：https://dev.mysql.com/downloads/
 ##### TDSQL C++接口测试
 
 ##### TDSQL Java接口测试
-Java对TDSQL的接口测试，需要将源码编译成jar包，这样就可以把驱动和代码打包在一起，直接上传到用户的测试环境就可以进行测试。
+1. Java对TDSQL的接口测试，需要将源码编译成jar包，这样就可以把驱动和代码打包在一起，直接上传到用户的测试环境就可以进行测试。
+2. 测试方式和结果
+```shell
+[root@clm-test01 home]# java -jar TestConnect.jar 
+Please enter  Proxy address: 
+
+Please enter database port: 
+
+Please enter database name: 
+
+Please enter database user: 
+
+Please enter database password: 
+
+---------------JDBC Connection Test---------------
+接口当前测试时间是: 2023-05-16 10:17:35
+当前连接测试的数据库信息如下: 
+           VARIABLE_NAME		VARIABLE_VALUE
+       admin_tls_version		TLSv1.2
+          innodb_version		8.0.32
+        protocol_version		10
+replica_type_conversions		
+  slave_type_conversions		
+             tls_version		TLSv1.2
+                 version		8.0.32
+         version_comment		MySQL Community Server - GPL
+ version_compile_machine		x86_64
+      version_compile_os		Linux
+    version_compile_zlib		1.2.13
+
+```
 ##### TDSQL PHP接口测试
 PHP在赤兔平台进行安装的时候已经安装好了，我们使用PHP内置web的服务器进行测试。不在原有的赤兔环境进行测试，防止将赤兔的PHP环境破坏。如果PHP命令无法运行，请检查PHP的环境变量。或者到PHP的安装目录下的bin目录中手动执行php命令。
 1. 将test-php-interface.php上传到测试服务器，或者新建一个index.php文件，将test-php-interface.php中的测试代码复制到新建的PHP文件中。如果是上传的源文件，在访问连接中需要添加完整的文件名。
@@ -37,7 +67,7 @@ curl -is http://localhost:8515
 # 方式2
 curl -is http://localhost:8515/test-php-interface.php
 ```
-4. 测试结果
+4. 测试方式和结果
 
 ```shell
 [root@clm-test01 bin]# curl -is http://localhost:8515
@@ -79,7 +109,7 @@ pip-3.6 install pymysql
 pip-3.6 install /home/PyMySQL-1.0.3-py3-none-any.whl
 ```
 4. 运行测试脚本，根据提示输入相应的数据库连接信息
-5. 测试结果
+5. 测试方式和结果
 ```shell
 [root@clm-test01 ~]# python3.6 test_python_interface.py 
 Please enter  Proxy address: 
