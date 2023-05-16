@@ -66,8 +66,20 @@ replica_type_conversions
 ```
 
 ##### TDSQL Python接口测试
-1. Python接口测试需要Python3.x以上版本。运行测试脚本，根据提示输入相应的数据库连接信息。
-2. 测试结果
+1. Python接口测试需要Python3.x以上版本
+2. 在线pip安装pymysql驱动
+```shell
+# 方式1
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple pymysql
+# 方式2，需要配置pip源，国外的源比较慢
+pip-3.6 install pymysql
+```
+3. 离线pip安装pymysql驱动
+```shell
+pip-3.6 install /home/PyMySQL-1.0.3-py3-none-any.whl
+```
+4. 运行测试脚本，根据提示输入相应的数据库连接信息
+5. 测试结果
 ```shell
 [root@clm-test01 ~]# python3.6 test_python_interface.py 
 Please enter  Proxy address: 
